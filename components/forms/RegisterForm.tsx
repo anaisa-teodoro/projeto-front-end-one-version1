@@ -3,6 +3,7 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 
 type Inputs = {
   nome: string
+  sexo: string
   dataNascimento: string
   cpf: string
   email: string
