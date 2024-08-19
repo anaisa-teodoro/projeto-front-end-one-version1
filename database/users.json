@@ -1,0 +1,138 @@
+[
+  {
+    "nome": "George Lucas",
+    "sexo": "Masculino",
+    "dataNascimento": "1940-05-04",
+    "cpf": "11133348712",
+    "email": "george@email.com",
+    "senha": "$2b$10$FnO1ISNmLPae7EhxGgvdB.ywXc2ZvmbS6TdUkE9L75JHvr3arwn/y",
+    "cep": "04518-021",
+    "endereco": "Rua Maria Noschese",
+    "numero": "1",
+    "complemento": "de 231/232 ao fim",
+    "locations": [],
+    "id": "49tzl6w0m"
+  },
+  {
+    "nome": "Chewbacca",
+    "sexo": "Masculino",
+    "dataNascimento": "2000-10-01",
+    "cpf": "12345678910",
+    "email": "chew@email.com",
+    "senha": "$2b$10$83r1PbwUJzC0m7LhQAfx4u3WT/2sbbGyzBmNFlg/fpO91aS9RJUAy",
+    "cep": "04518-021",
+    "endereco": "Rua Maria Noschese",
+    "numero": "1",
+    "complemento": "de 231/232 ao fim",
+    "locations": [],
+    "id": "kymau28wf"
+  },
+  {
+    "nome": "Leia Organa",
+    "sexo": "Feminino",
+    "dataNascimento": "1955-09-10",
+    "cpf": "44433322210",
+    "email": "leia@email.com",
+    "senha": "$2b$10$f5Thw8xl8PH433RbImBXeO1FuZGc9inmeecWXH7BjTcwGr4v06kZG",
+    "cep": "04518-021",
+    "endereco": "Rua Maria Noschese",
+    "numero": "1",
+    "complemento": "de 231/232 ao fim",
+    "locations": [
+      {
+        "local": "Pontas das Canas",
+        "estado": "SC",
+        "descricao": "Restinga",
+        "cep": "88056765",
+        "endereco": "Condomínio Antares, Ponta das Canas, Florianópolis - SC",
+        "latitude": "-27.41271",
+        "longitude": "-48.4248"
+      },
+      {
+        "local": "Barra da Lagoa",
+        "estado": "SC",
+        "descricao": "Lagoa",
+        "cep": "88061200",
+        "endereco": "Avenida Cidade de Córdoba, Barra da Lagoa, Florianópolis - SC",
+        "latitude": "-27.57339",
+        "longitude": "-48.43086"
+      },
+      {
+        "local": "Manguezal do Rio Tavares",
+        "estado": "SC",
+        "descricao": "Manguezal",
+        "cep": "88040900",
+        "endereco": "Rua Roberto Sampaio Gonzaga, s/n, Trindade, Florianópolis - SC",
+        "latitude": "-27.59992",
+        "longitude": "-48.52062"
+      },
+      {
+        "local": "Dunas dos Ingleses",
+        "estado": "SC",
+        "descricao": "Dunas",
+        "cep": "88058610",
+        "endereco": "Rua das Dunas, Ingleses do Rio Vermelho, Florianópolis - SC",
+        "latitude": "-27.43774",
+        "longitude": "-48.39404"
+      },
+      {
+        "local": "Parque Municipal da Lagoinha do Leste",
+        "estado": "SC",
+        "descricao": "Parque municipal",
+        "cep": "88010500",
+        "endereco": "Rua Anita Garibaldi, Centro, Florianópolis - SC",
+        "latitude": "-27.59658",
+        "longitude": "-48.54766"
+      }
+    ],
+    "id": "jxylxp5y0"
+  },
+  {
+    "nome": "Luke Skywalker",
+    "sexo": "Masculino",
+    "dataNascimento": "1955-09-10",
+    "cpf": "444222222210",
+    "email": "luke@email.com",
+    "senha": "$2b$10$DGE3UwzqacKoIamAqkzC..0WJ1x6e3Ae6ZP1mdmvtrGAf97m0B842",
+    "cep": "04518-021",
+    "endereco": "Rua Maria Noschese",
+    "numero": "1",
+    "complemento": "de 231/232 ao fim",
+    "locations": [
+      {
+        "local": "Florianópolis",
+        "estado": "SC",
+        "descricao": "",
+        "cep": "",
+        "endereco": "",
+        "latitude": "",
+        "longitude": ""
+      }
+    ],
+    "id": "5rmb12rp7"
+  },
+  {
+    "nome": "Han Solo",
+    "sexo": "Masculino",
+    "dataNascimento": "1950-04-20",
+    "cpf": "44433348710",
+    "email": "han@email.com",
+    "senha": "$2b$10$G.m34rK7YJN6prTmZlfsjOuoIUy9EHoxfJ/nTqaCyWND.8FqlQfTS",
+    "cep": "04518-021",
+    "endereco": "Rua Maria Noschese",
+    "numero": "1",
+    "complemento": "de 231/232 ao fim",
+    "locations": [
+      {
+        "local": "Florianópolis",
+        "estado": "SC",
+        "descricao": "",
+        "cep": "",
+        "endereco": "",
+        "latitude": "",
+        "longitude": ""
+      }
+    ],
+    "id": "2sh2mmpm1"
+  }
+]

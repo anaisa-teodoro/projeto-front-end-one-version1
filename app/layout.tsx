@@ -1,22 +1,45 @@
-'use client'
+'use client';
+
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { usePathname, useRouter } from 'next/navigation';
+import { redirect, usePathname, useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import Cookie from 'js-cookie';
 import { LayoutComponent } from '@/components/Layout';
-import { useEffect } from 'react';
+import { UserProvider } from './context/UserContext';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const pathname = usePathname();
+  const [initialLoad, setInitialLoad] = useState(true);
 
   useEffect(() => {
-    if (pathname === '/') {
-      router.push('/login');
-    }
-  }, [pathname, router]);
+    const userId = Cookie.get('id');
+    console.log('Authenticated User ID:', userId);
 
-  const showSidebar = pathname === '/dashboard' || pathname === '/location' || pathname === '/usuarios';
+    if (initialLoad) {
+      setInitialLoad(false);
+      return; // Evita execução adicional durante a carga inicial
+    }
+
+    // ⚠️ WARNING: As linhas comentadas abaixo quebram a tela de login, porém são necessárias para limitar acessos pela URL
+    // if (!userId && pathname !== '/register') {
+    //   router.push('/login');
+    // }
+
+    // if(!userId && pathname !== '/login'){
+    //   router.push('/login')
+    // }
+    
+  }, [pathname, router, initialLoad]);
+
+  const showSidebar = pathname === '/dashboard' || pathname === '/location' || pathname === '/users';
+
+  if (typeof window !== 'undefined' && window.location.pathname === '/') {
+    redirect('/login');
+  }
 
   return (
     <html lang="en">
@@ -29,15 +52,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Natureza</title>
       </head>
       <body className={inter.className}>
-        {showSidebar ? (
-          <LayoutComponent>
-            {children}
-          </LayoutComponent>
-        ) : (
-          <main>
-            {children}
-          </main>
-        )}
+        <UserProvider>
+          {showSidebar ? (
+            <LayoutComponent>
+              {children}
+            </LayoutComponent>
+          ) : (
+            <main>
+              {children}
+            </main>
+          )}
+        </UserProvider>
       </body>
     </html>
   );

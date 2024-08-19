@@ -55,7 +55,6 @@ Ao rodar um dos comandos, inicia-se o servidor e aparecerá a seguinte mensagem 
 
  ✓ Starting...
  ✓ Ready in 2.2s
-
 ```
 Clique na URL local, conforme demonstrado no passo anterior para abrir uma janela na preferência do seu navegador, conforme a imagem:
 
@@ -63,7 +62,13 @@ Clique na URL local, conforme demonstrado no passo anterior para abrir uma janel
   <img src="./app/assets/login.png" alt="Tela login Natureza 365" title="Login do Natureza 365" width="900"/>
 </h1>
 
+Para logar um "usuario teste":
 
+```schema
+email: leia@email.com
+senha: leia123
+```
+Demais usuarios, apenas acrescentar 123
 
 ## 💻 Projeto
 

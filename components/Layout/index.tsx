@@ -30,7 +30,7 @@ export const LayoutComponent = ({ children }: any) => {
           </li>
           <li>
             <Link 
-              href="/usuarios" 
+              href="/users" 
               className={`nav-item nav-item-usuarios block py-2 px-4 rounded ${pathname === '/usuarios' ? 'bg-gray-700' : 'hover:bg-gray-700'}`}
             >
               Usuários
