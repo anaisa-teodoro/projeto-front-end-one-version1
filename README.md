@@ -62,13 +62,13 @@ Clique na URL local, conforme demonstrado no passo anterior para abrir uma janel
   <img src="./app/assets/login.png" alt="Tela login Natureza 365" title="Login do Natureza 365" width="900"/>
 </h1>
 
-Para logar um "usuario teste":
+Para logar um "usuário teste":
 
 ```schema
 email: leia@email.com
 senha: leia123
 ```
-Demais usuarios, apenas acrescentar 123
+Demais usuarios, apenas acrescentar 123 após nome do usuário.
 
 ## 💻 Projeto
 
