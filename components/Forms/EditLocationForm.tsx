@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useRouter, useParams } from 'next/navigation';
+import { useRouter, useParams, useSearchParams } from 'next/navigation';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 type Inputs = {
@@ -16,7 +16,10 @@ type Inputs = {
 };
 
 export const LocationEditForm = () => {
-  const { id, locationIndex } = useParams();
+  const { id } = useParams();
+  //Query ID
+  const search = useSearchParams();
+  const locationIndex = search.get('locationIndex');
   const [locationData, setLocationData] = useState<Inputs | null>(null);
   const router = useRouter();
   const { register, handleSubmit, setValue, formState: { errors } } = useForm<Inputs>();
@@ -25,7 +28,8 @@ export const LocationEditForm = () => {
     // Buscar dados da localização para edição
     const fetchLocationData = async () => {
       try {
-        const response = await axios.get(`/api/location/${id}/${locationIndex}`);
+        //Verificar o por quê do erro de não buscar os dados
+        const response = await axios.get(`/api/locations/${id}/${locationIndex}`);
         setLocationData(response.data);
         if (response.data) {
           setValue('local', response.data.local);
